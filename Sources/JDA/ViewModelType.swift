@@ -14,14 +14,12 @@ public protocol ViewModelType: ObservableObject {
   associatedtype Effect
   associatedtype State
   
-  typealias EffectPublisher = any Publisher<Effect, Never>
-  
   // Property
   var cancelable: Set<AnyCancellable> { get set }
   var action: ActionSubject<Action> { get }
   var state: State { get set }
   
-  func effect(action: Action) -> EffectPublisher
+  func effect(action: Action) -> AnyPublisher<Effect, Never>
   func reduce(effect: Effect, state: State) -> State
 }
 
