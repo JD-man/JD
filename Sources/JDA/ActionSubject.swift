@@ -21,7 +21,7 @@ final public class ActionSubject<Action> {
     return subject
   }
   
-  func send(_ action: Action) {
+  public func send(_ action: Action) {
     assert(isInitiated, "Please ViewModel.start()")
     subject.send(action)
   }
