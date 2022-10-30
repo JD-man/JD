@@ -9,8 +9,13 @@ import Foundation
 import Combine
 
 final public class ActionSubject<Action> {
-  private let subject = PassthroughSubject<Action, Never>()
-  private var isInitiated = false
+  private let subject: PassthroughSubject<Action, Never>
+  private var isInitiated: Bool
+  
+  public init() {
+    self.subject = .init()
+    self.isInitiated = false
+  }
   
   func stream() -> PassthroughSubject<Action, Never> {
     return subject
