@@ -19,7 +19,7 @@ public protocol ViewModelType: ObservableObject {
   var action: ActionSubject<Action> { get }
   var state: State { get set }
   
-  func effect(action: Action) -> AnyPublisher<Effect, Never>
+  func effect(action: Action) -> any Publisher<Effect, Never>
   func reduce(effect: Effect, state: State) -> State
 }
 
