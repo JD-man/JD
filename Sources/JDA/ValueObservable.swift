@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-final class ValueObservable<T, Action>: ObservableObject {
+final public class ValueObservable<T, Action>: ObservableObject {
   
   var value: T {
     willSet {

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-protocol ViewType: View {
+public protocol ViewType: View {
   associatedtype ViewModel: ViewModelType
   var viewModel: ViewModel { get }
 }

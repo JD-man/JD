@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-final class ActionSubject<Action> {
+final public class ActionSubject<Action> {
   private let subject = PassthroughSubject<Action, Never>()
   private var isInitiated = false
   

@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import Combine
 
-protocol ViewModelType: ObservableObject {
+public protocol ViewModelType: ObservableObject {
   associatedtype Action
   associatedtype Effect
   associatedtype State
@@ -58,7 +58,7 @@ extension ViewModelType {
   }
 }
 
-struct ViewModelStarter {
+public struct ViewModelStarter {
   private static var checker: [String: Bool] = [:]
   
   private static func isInitialed(_ viewModel: any ViewModelType) -> Bool {
