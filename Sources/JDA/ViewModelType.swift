@@ -39,12 +39,12 @@ extension ViewModelType {
       }.store(in: &cancelable)
   }
   
-  func start() -> Self {
+  public func start() -> Self {
     ViewModelStarter.start(self)
     return self
   }
   
-  func value<T>(
+  public func value<T>(
     value: (State) -> T,
     input: @escaping (T) -> Action
   ) -> Binding<T> {
