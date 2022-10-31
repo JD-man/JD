@@ -5,12 +5,11 @@
 //  Created by 조동현 on 2022/10/10.
 //
 
-import Foundation
 import Combine
 import SwiftUI
 import JDA
 
-final class ContentViewModel: ObservableObject, ViewModelType {
+final class ContentViewModel: ViewModelType {
   @Published var state = State()
   var action = ActionSubject<Action>()
   var cancelable = Set<AnyCancellable>()
