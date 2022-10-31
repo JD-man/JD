@@ -42,8 +42,8 @@ extension ViewModelType {
   }
   
   public func value<T>(
-    value: (State) -> T,
-    input: @escaping (T) -> Action
+    _ value: (State) -> T,
+    action input: @escaping (T) -> Action
   ) -> Binding<T> {
     let element = value(self.state)
     let observable = ValueObservable(
