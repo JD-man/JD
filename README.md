@@ -118,10 +118,10 @@ Button("Request") {
 
 - TextField 등의 Binding
 ```swift
-TextField("Validation Text", text: viewModel.value(value: {
-    $0.inputText
-  }, input: {
-    ContentViewModel.Action.validationText($0)
+TextField("Validation Text", text: viewModel.value({
+  $0.inputText
+}, action: {
+  ContentViewModel.Action.validationText($0)
 }))
 ```
 
