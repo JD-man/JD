@@ -5,7 +5,6 @@
 //  Created by JD-man on 2022/10/30.
 //
 
-import Foundation
 import Combine
 
 final public class ActionSubject<Action> {
