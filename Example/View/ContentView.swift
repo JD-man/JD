@@ -24,9 +24,9 @@ struct ContentView: ViewType {
         
         Text(viewModel.state.validText)
         
-        TextField("Validation Text", text: viewModel.value(value: {
+        TextField("Validation Text", text: viewModel.value({
           $0.inputText
-        }, input: {
+        }, action: {
           ContentViewModel.Action.validationText($0)
         }))
       }
