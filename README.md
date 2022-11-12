@@ -3,6 +3,11 @@
 조동의 SwiftUI 구조 연구 대소동
 
 ---
+## Template 설치
+- 다운로드 후 Toolings 디렉토리의 install-JDA 실행
+- ```sh install-JDA.sh```
+
+---
 
 ## ViewModel
 
