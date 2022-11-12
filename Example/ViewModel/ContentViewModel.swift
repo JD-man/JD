@@ -6,7 +6,6 @@
 //
 
 import Combine
-import SwiftUI
 import JDA
 
 final class ContentViewModel: ViewModelType {
