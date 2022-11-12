@@ -1,7 +1,6 @@
 //___FILEHEADER___
 
 import Combine
-import SwiftUI
 import JDA
 
 final class ___VARIABLE_jdaname___ViewModel: ViewModelType {
