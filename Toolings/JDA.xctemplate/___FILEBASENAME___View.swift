@@ -1,7 +1,7 @@
 //___FILEHEADER___
 
-import JDA
 import SwiftUI
+import JDA
 
 struct ___VARIABLE_jdaname___View: ViewType {
   @StateObject var viewModel: ___VARIABLE_jdaname___ViewModel
