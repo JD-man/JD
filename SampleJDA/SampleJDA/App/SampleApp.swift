@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct MVVMSwiftUIStudyApp: App {
+struct SampleApp: App {
   var body: some Scene {
     WindowGroup {
       ContentViewBuilder.content.view
